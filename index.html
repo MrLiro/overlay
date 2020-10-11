@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Overlay</title>
+    </head>
+    <body>
+        <input type="text" placeholder="Enter Color Here" id="nm">
+        <script>
+            var image_tracker = 'f';
+            var a=document.getElementById("nm").value;
+
+            function cond(){
+                var imageVar=document.getElementById('imagen');
+                if(a=="rojo"){
+                    image.src='overlayrojo.png';
+                }
+
+                else if(a=="azul"){
+                    image.src='overlayazul.png';
+                }
+
+                else if(a=="verde"){
+                    image.src='overlayverde.png';
+                }
+
+                else if(a=="purpura"){
+                    image.src='overlaypurpura.png';
+                }
+
+                else if(a=="rosa"){
+                    image.src='overlayrosa.png';
+                }
+
+                else if(a=="amarillo"){
+                    image.src='overlayamarillo.png';
+                }
+
+                else if(a=="gris"){
+                    image.src='overlaygris.png';
+                }
+
+                else{
+                    image.src='overlayblanco.png';
+                }
+            }
+        </script>
+    </body>
+        <img src="overlayblanco.png" alt="Overlay" id="imagen">
+</html>
