@@ -6,45 +6,54 @@
     </head>
     <body>
         <input type="text" placeholder="Enter Color Here" id="nm">
-        <script>
-            var image_tracker = 'f';
-            var a=document.getElementById("nm").value;
-
+        <script type="text/javascript">
+            var image_tracker = 'blanco';
+            
             function cond(){
-                var imageVar=document.getElementById('imagen');
+                var a=document.getElementById("nm").value;
+                var imageVar=document.getElementById('social');
                 if(a=="rojo"){
-                    image.src='overlayrojo.png';
+                    imageVar.src='overlayrojo.png';
+                    image_tracker = 'rojo';
                 }
 
                 else if(a=="azul"){
-                    image.src='overlayazul.png';
+                    imageVar.src='overlayazul.png';
+                    image_tracker = 'azul';
                 }
 
                 else if(a=="verde"){
-                    image.src='overlayverde.png';
+                    imageVar.src='overlayverde.png';
+                    image_tracker = 'verda';
                 }
 
                 else if(a=="purpura"){
-                    image.src='overlaypurpura.png';
+                    imageVar.src='overlaypurpura.png';
+                    image_tracker = 'purpura';
                 }
 
                 else if(a=="rosa"){
-                    image.src='overlayrosa.png';
+                    imageVar.src='overlayrosa.png';
+                    image_tracker = 'rosa';
                 }
 
                 else if(a=="amarillo"){
-                    image.src='overlayamarillo.png';
+                    imageVar.src='overlayamarillo.png';
+                    image_tracker = 'amarillo';
                 }
 
                 else if(a=="gris"){
-                    image.src='overlaygris.png';
+                    imageVar.src='overlaygris.png';
+                    image_tracker = 'gris';
                 }
 
                 else{
-                    image.src='overlayblanco.png';
+                    imageVar.src='overlayblanco.png';
+                    image_tracker = 'blanco';
                 }
             }
         </script>
+        <button type="button" onclick="cond();">Enter</button>
     </body>
-        <img src="overlayblanco.png" alt="Overlay" id="imagen">
+        <img src="overlayblanco.png" alt="Overlay" id="social">
 </html>
