@@ -6,10 +6,14 @@
     </head>
     <body>
         <input type="text" placeholder="Enter Color Here" id="nm">
-        <script type="text/javascript">
+       
+       <script type="text/javascript">
+
+            const fs = require('fs') 
             var image_tracker = 'blanco';
             
             function cond(){
+
                 var a=document.getElementById("nm").value;
                 var imageVar=document.getElementById('social');
                 if(a=="rojo"){
@@ -44,6 +48,11 @@
 
                 else if(a=="gris"){
                     imageVar.src='overlaygris.png';
+                    image_tracker = 'gris';
+                }
+
+                else if(a=="negro"){
+                    imageVar.src='overlaynegro.png';
                     image_tracker = 'gris';
                 }
 
